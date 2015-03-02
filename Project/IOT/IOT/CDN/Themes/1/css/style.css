@@ -27,7 +27,7 @@ body { background: url(../images/bg-header.jpg) no-repeat top center; }
 .page-wrapper-inner { min-height: 600px; max-width: 1920px; }
 .header { height: 150px; position: relative; }
 .header-inner { width: 960px; margin: 0 auto; position: relative;}
-.main-menu-c { height: 45px; position: absolute; bottom: 0; width: 100%; background: url(../images/bg-sprite.png) repeat 0 0; }
+.main-menu-c { height: 45px; position: absolute; z-index:200; bottom: 0; width: 100%; background: url(../images/bg-sprite.png) repeat 0 0; }
 .main-menu, .menu-item-c { display: inline; }
 .main-menu { display: block; width: 960px; margin: 0 auto; }
 .menu-item { display: inline-block; height: 45px; line-height: 45px; padding: 0 30px; color: #fff; text-decoration: none; font-size: 1.2em; }
