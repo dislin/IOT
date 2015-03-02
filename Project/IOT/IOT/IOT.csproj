@@ -122,12 +122,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Controllers\CareersController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TechnologyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CDN\Js\common.js" />
     <Content Include="CDN\Js\Lib\angular-sanitize.js" />
     <Content Include="CDN\Js\Lib\angular.js" />
     <Content Include="CDN\Js\Lib\coin-slider.js" />
@@ -139,6 +148,15 @@
     <Content Include="CDN\Js\Lib\jquery.extend.js" />
     <Content Include="CDN\Js\Lib\json2.js" />
     <Content Include="CDN\Js\Lib\jsrender.js" />
+    <Content Include="CDN\Themes\1\css\style.css" />
+    <Content Include="CDN\Themes\1\images\banner.jpg" />
+    <Content Include="CDN\Themes\1\images\bg-header.jpg" />
+    <Content Include="CDN\Themes\1\images\bg-sprite.png" />
+    <Content Include="CDN\Themes\1\images\logo.png" />
+    <Content Include="CDN\Themes\1\images\sm-banner1.png" />
+    <Content Include="CDN\Themes\1\images\sm-banner2.png" />
+    <Content Include="CDN\Themes\1\images\sm-banner3.png" />
+    <Content Include="CDN\Themes\1\images\sprite.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -209,15 +227,52 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bundles\jquery\" />
     <Folder Include="CDN\Download\" />
-    <Folder Include="CDN\Themes\1\css\" />
-    <Folder Include="CDN\Themes\1\images\" />
     <Folder Include="CDN\Upload\Images\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\About\CorporateOverview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\About\MissionVision.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Technology\SilvoFlashOverview.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Technology\SilvoFlashMacroDesign.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\LicensedProducts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\StandaloneProducts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Application\Application.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Careers\WhyIoTMemory.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Careers\JobOpening.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ContactUs\ContactUs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ContactUs\ContactPartner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\News\NewsDetails.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

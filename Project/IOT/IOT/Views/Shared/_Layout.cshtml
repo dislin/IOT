@@ -4,13 +4,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/CDN/Themes/1/css/style.css")
+  @*  @Scripts.Render("~/bundles/modernizr")*@
 </head>
-<body>
-    @RenderBody()
+<body class="@ViewContext.RouteData.Values["Controller"].ToString().ToLower()">
+    <div class="page-wrapper">
+        <div class="page-wrapper-inner">
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo-c"><a class="logo" href="/"></a></div>
+                <nav class="lang-bar">
+                         <a class="lang-menu-item" href="#">繁中</a> /
+                         <a class="lang-menu-item" href="#">简中</a> /
+                         <a class="lang-menu-item selected" href="#">ENG</a>
+                </nav>
+            </div>
+             <nav class="main-menu-c">
+                    <ul class="main-menu">
+                        <li class="menu-item-c home"><a class="menu-item" href="/">Home</a></li>
+                        <li class="menu-item-c about"><a class="menu-item" href="/about/corporateoverview">About IoTMemory</a>
+                                        <span class="sub-menu-c">
+                                              <span class="sub-menu-arrow"></span>
+                                               <span class="sub-menu-content">
+                                                    <a href="/about/corporateoverview" class="sub-menu-item">Corporate Overview</a>
+                                                    <a href="/about/missionvision" class="sub-menu-item">Mission & Vision</a>
+                                               </span>
+                                       </span>
+                        </li>
+                        <li class="menu-item-c long-sub-menu technology"><a class="menu-item" href="/technology/silvoflashoverview">Technology</a>
+                            <span class="sub-menu-c">
+                                              <span class="sub-menu-arrow"></span>
+                                               <span class="sub-menu-content">
+                                                    <a href="/technology/silvoflashoverview" class="sub-menu-item">SilvoFlash<sup class="sup">TM</sup> Overview</a>
+                                                    <a href="/technology/silvoflashmacrodesign" class="sub-menu-item">SilvoFlash<sup class="sup">TM</sup> Macro Design</a>
+                                               </span>
+                                       </span>
 
-    @Scripts.Render("~/bundles/jquery")
+                        </li>
+                        <li class="menu-item-c long-sub-menu product"><a class="menu-item" href="/product/licensedproducts">Products</a>
+                             <span class="sub-menu-c">
+                                              <span class="sub-menu-arrow"></span>
+                                               <span class="sub-menu-content">
+                                                    <a href="/product/licensedproducts" class="sub-menu-item">Licensed Products</a>
+                                                    <a href="/product/standaloneproducts" class="sub-menu-item">Standalone Products</a>
+                                               </span>
+                                       </span>
+                        </li>
+                        <li class="menu-item-c application"><a class="menu-item" href="/application/application">Applications</a></li>
+
+                        <li class="menu-item-c long-sub-menu careers"><a class="menu-item" href="/careers/whyiotmemory">Careers</a>
+                             <span class="sub-menu-c">
+                                              <span class="sub-menu-arrow"></span>
+                                               <span class="sub-menu-content">
+                                                    <a href="/careers/whyiotmemory" class="sub-menu-item">Why IoTMemory</a>
+                                                    <a href="/careers/jobopening" class="sub-menu-item">Job Opening</a>
+                                               </span>
+                                       </span>
+                        </li>
+                        <li class="menu-item-c contactus"><a class="menu-item" href="/contactus/contactus">Contact Us</a>
+                             <span class="sub-menu-c">
+                                              <span class="sub-menu-arrow"></span>
+                                               <span class="sub-menu-content">
+                                                    <a href="/contactus/contactus" class="sub-menu-item">IoTMemory</a>
+                                                    <a href="/contactus/contactpartner" class="sub-menu-item">Partner</a>
+                                               </span>
+                                       </span>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+    @RenderBody()
+        <footer class="footer">
+            <div class="footer-inner">
+
+                    <div class="footer-add">
+                        1F., No.9, Ln. 166, Sanmin Rd., Songshan Dist., Taipei City 10592, Taiwan, <br />        Website: www.iotmemory.com, Email: <a href="mailto:service@iotmemory.com" class="email-link">service@iotmemory.com</a>, Tel: +886-2-37652577 
+                    </div>
+                    <div class="footer-copyright">
+                        Copyright © IoTMemory Technology Inc. <br />        All Rights Reserved                        
+                    </div>
+                    <br class="clear-both" />
+                </div>
+        </footer>
+   @* @Scripts.Render("~/bundles/jquery")*@
+
+             <script src="@Url.Content("~/CDN/Js/Lib/jquery-1.10.2.min.js")" type="text/javascript"></script>
+     <script src="@Url.Content("~/CDN/Js/Lib/jquery-ui-1.10.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/CDN/Js/Lib/coin-slider.min.js")" type="text/javascript"></script>
+             <script src="@Url.Content("~/CDN/Js/common.js")" type="text/javascript"></script>
     @RenderSection("scripts", required: false)
+       </div>
+   </div>
 </body>
 </html>
