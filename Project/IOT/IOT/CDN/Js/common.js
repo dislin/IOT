@@ -9,7 +9,7 @@ $(function () {
         sDelay: 500, // delay beetwen squares in ms
         opacity: 0, // opacity of title and navigation
         titleSpeed: 500, // speed of title appereance in ms
-        effect: 'rain', // random, swirl, rain, straight
+        effect: 'straight', // random, swirl, rain, straight
         navigation: true, // prev next and buttons
         links: false, // show images as links 
         hoverPause: false // pause on hover

@@ -126,7 +126,9 @@
     <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\CareersController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MaintenanceController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\TechnologyController.cs" />
@@ -152,6 +154,8 @@
     <Content Include="CDN\Themes\1\images\banner.jpg" />
     <Content Include="CDN\Themes\1\images\bg-header.jpg" />
     <Content Include="CDN\Themes\1\images\bg-sprite.png" />
+    <Content Include="CDN\Themes\1\images\favicon.ico" />
+    <Content Include="CDN\Themes\1\images\favicon.png" />
     <Content Include="CDN\Themes\1\images\logo.png" />
     <Content Include="CDN\Themes\1\images\sm-banner1.png" />
     <Content Include="CDN\Themes\1\images\sm-banner2.png" />
@@ -273,6 +277,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\News\NewsDetails.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Maintenance\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ErrorLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Error\index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
