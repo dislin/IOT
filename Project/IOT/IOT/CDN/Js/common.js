@@ -1,7 +1,7 @@
 $(function () {
 
     $("#coin-slider").coinslider({
-        width: 960, // width of slider panel
+        width: 950, // width of slider panel
         height: 450, // height of slider panel
         spw: 1, // squares per width
         sph: 1, // squares per height
