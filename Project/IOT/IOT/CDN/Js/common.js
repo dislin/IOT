@@ -2,7 +2,7 @@ $(function () {
 
     $("#coin-slider").coinslider({
         width: 950, // width of slider panel
-        height: 450, // height of slider panel
+        height: 300, // height of slider panel
         spw: 1, // squares per width
         sph: 1, // squares per height
         delay: 5000, // delay between images in ms

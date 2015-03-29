@@ -31,9 +31,9 @@ body { background: url(../images/bg-header.jpg) no-repeat top center; }
 .main-menu-c { height: 45px; position: absolute; z-index:200; bottom: 0; width: 100%; background: url(../images/bg-sprite.png) repeat 0 0; }
 .main-menu, .menu-item-c { display: inline; }
 .main-menu { display: block; width: 960px; margin: 0 auto; }
-.menu-item { display: inline-block; height: 45px; line-height: 45px; padding: 0 30px; color: #fff; text-decoration: none; font-size: 1.2em; }
+.menu-item { display: inline-block; height: 45px; line-height: 45px; padding: 0 20px; color: #fff; text-decoration: none; font-size: 1.2em; text-transform: uppercase; }
 .menu-item-c.selected .menu-item { background: #e46100; }
-.menu-item:hover { color: #a34500; }
+.menu-item:hover { color: #000; }
 .menu-item-c.selected .menu-item:hover { color: #fff; }
 
 body.home .home .menu-item, body.about .about .menu-item, body.technology .technology .menu-item, body.product .product .menu-item,
@@ -60,7 +60,7 @@ body.application .application .menu-item, body.careers .careers .menu-item, body
 .lang-menu-item.selected { color: #fff; }
 
 .body-content-wrapper { width: 960px; margin: 0 auto; min-height: 600px; }
-.banner-c { width: 950px; height: 450px;  }
+.banner-c { width: 950px; height: 300px;  }
 .body-content { margin-top: 60px; }
 
 .news-c { float: left; width: 50%; margin-right: 4.5%; }
