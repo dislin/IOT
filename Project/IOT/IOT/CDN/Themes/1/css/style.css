@@ -76,9 +76,9 @@ body.application .application .menu-item, body.careers .careers .menu-item, body
 .inline-link:hover { color: #4e8700; }
 
 .news-content { display: block; border: 1px solid #dadada; }
-.news-row { display: block; color: #89b351; position: relative; border-bottom: 1px solid #dadada; background: #f4f4f4; text-decoration: none; padding: 0 20px 0 10px; height: 40px; line-height: 40px; overflow: hidden; }
-.news-date { font-size: 18px; font-weight: bold; }
-.news-outline { font-size: 14px; margin-left: 30px; }
+.news-row { display: block; color: #89b351; position: relative; border-bottom: 1px solid #dadada; background: #f4f4f4; text-decoration: none; padding: 0 20px 0 10px; height: 40px; line-height: 40px; overflow: hidden;clear: both; }
+.news-date { font-size: 18px; font-weight: bold; float: left; width: 100px; line-height: 14px; margin: 12px 0 0 0; }
+.news-outline { font-size: 14px; margin-left: 30px; display: table-cell; width: 330px; height: 40px; vertical-align: middle; line-height: 16px; }
 .news-right-arrow {height: 0; width: 0; position: absolute; right: 10px; top: 15px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
